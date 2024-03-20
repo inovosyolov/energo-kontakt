@@ -1,0 +1,284 @@
+@media screen and (max-width: 1200px) {
+  .header__contacts {
+    display: none;
+  }
+
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .header__telephone-link-mobile {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .main__container {
+    -webkit-column-gap: initial;
+       -moz-column-gap: initial;
+            column-gap: initial;
+  }
+
+  .nav__wrapper {
+    position: absolute;
+    left: 16px;
+    top: 183px;
+    height: inherit;
+    background: var(--grey-color);
+    border-radius: var(--border-radius);
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .nav__list {
+    margin: 0 0 48px;
+  }
+  
+  .nav__logo {
+    width: 157.5px;
+    height: 45.75px;
+  }
+}
+
+.nav__wrapper_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .contacts__link {
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+
+  .projects__content {
+    min-height: 196px;
+  }
+
+  .footer__wrapper {
+    row-gap: 40px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+
+  .footer__contacts-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px 0;
+  }
+
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer__service-link {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  section {
+    padding-bottom: 40px;
+  }
+
+  .banner__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .banner__button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  .form__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas:
+    "name"
+    "phone"
+    "email"
+    "msg";
+  }
+
+  .form__item_msg {
+    min-height: 192px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    padding: 16px 0;
+  }
+
+  :root {
+    --border-radius: 16px;
+  }
+
+  .button {
+    padding: 14px 28px;
+    font-size: 14px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .burger {
+    width: 18px;
+    height: 7px;
+  }
+
+  .form__list {
+    margin-bottom: 24px;
+  }
+
+  .form__button {
+    margin-bottom: 16px;
+  }
+
+  .js-validate-error-label {
+    top: 50px;
+  }
+
+  .burger__span:first-child {
+    top: 6px;
+    left: 7px;
+    width: 13px;
+  }
+  
+  .burger__span:last-child {
+    top: 0;
+    width: 18px;
+    bottom: 15px;
+  }
+
+  .nav__wrapper {
+    top: 111px;
+    padding: 24px;
+  }
+
+  .nav__list {
+    row-gap: 16px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .nav__logo {
+    width: 147.5px;
+    height: 35.75px;
+  }
+
+  .form__input {
+    font-size: 14px;
+  }
+
+  .header__wrapper {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .header__logo {
+    width: 124px;
+    height: 40px;
+  }
+
+  .header__telephone-link-mobile {
+    width: 16px;
+    height: 16px;
+  }
+
+  .banner__content {
+    padding: 24px 16px;
+    min-height: 424px;
+  }
+
+  .banner__wrapper {
+    background: url(../img/intro-bg-mobile.jpg) center center/cover no-repeat;
+  }
+
+  .banner__title {
+    font-size: 24px;
+  }
+
+  .about__wrapper {
+    row-gap: 24px;
+  }
+
+  .projects__wrapper {
+    row-gap: 24px
+  }
+
+  .projects__link {
+    font-size: 14px;
+  }
+
+  .projects__more-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feedback__wrapper {
+    row-gap: 24px;
+  }
+
+  .footer__wrapper {
+    padding: 24px 16px;
+  }
+
+  .footer__logo {
+    width: 123px;
+    height: 40px;
+  }
+
+  .footer__service-link {
+    width: 228px;
+    height: 48px;
+  }
+
+  .footer__service-img {
+    width: inherit;
+    height: inherit;
+  }
+}
